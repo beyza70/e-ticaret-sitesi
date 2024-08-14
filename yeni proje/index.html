@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mavera | Tesettür Giyim</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="title">M A V E R A</h2>
+      <ul class="menu">
+        <li class="active">Anasayfa</li>
+        <li>Yeni Gelenler</li>
+        <li> Üst Giyim</li>
+        <li>Alt Giyim </li>
+        <li>Dış Giyim</li>
+      </ul>
+      <ul class="menu_icons">
+        <li><i class="bi bi-person-square"></i></li>
+        <li><i class="bi bi-search"></i></li>
+        <li class="basket_icon" onclick="ToggleModel()">
+        <i class="bi bi-cart4"> </i>
+        <span class="sepet_sayisi"></span>
+        </li>
+      </ul>
+    </nav>
+    <section class="slider">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/slider5.png" class="d-block w-100" alt="Yeni Sezonu Keşfet">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Yeni Sezonu Keşfet</h5>
+              <p>Sezonun Trendlerini Kaçırma.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/slider6.png" class="d-block w-100" alt="Sezonun Trendlerini Kaçırma">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Yeni Sezonu Keşfet</h5>
+              <p>Sezonun Trendlerini Kaçırma.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/slider8.jpg" class="d-block w-100" alt="Yeni Sezon Takım Modelleri">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Yeni Sezonu Keşfet</h5>
+              <p>Sezonun Trendlerini Kaçırma.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+    <section class="store my-5">
+      <div class="filter_backgroung"></div><br/>
+      <li  class="yazi"> M A V E R A </li><br/><br/>
+      <ul class="filter">
+        <br/>
+        <li class="active">Yeni Gelenler</li>
+        <li> Elbise </li>
+        <li> Dış Giyim </li>
+        <li> Takım</li>
+        <li> Aksesuar </li>
+        <li> Kozmetik</li>
+       </ul>
+       <div class="row kiyafet_list"></div>
+    </section>
+    <div class="sepet_kolonu">
+      <div class="sepet_items">
+        <i class="bi bi-x" onclick="ToggleModel()"></i>
+        <h2 class="sepet_başlık">Sepet</h2>
+        <ul class="sepet_list">
+          <li class="sepet_item" >Alışveriş sepetinize henüz ürün eklemediniz. Alışverişe kaldığınız yerden devam edebilir ya da bütün ürünlerimize göz atabilirsiniz.</li>
+           </ul>
+        <div class="sepet_total">
+          <span class="fw-bold mb-3 fs-4 toplam_fiyat"></span> 
+          <button class="btn_sepete_ekle">Ödeme Yap</button>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

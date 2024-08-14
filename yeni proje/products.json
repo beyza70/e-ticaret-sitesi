@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "name": "Belden Bağlamalı Tesettür Elbise",
+    "size": 38,
+    "starRate": 1,
+    "price":449.99,
+    "oldPrice":749.99,
+    "reviewCount": 238,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/pembe.jpg",
+    "type": "Elbise"
+  },
+
+  {
+    "id": 2,
+    "name": "Keten Tesettür Elbise",
+    "size": 42,
+    "starRate": 3,
+    "price":749.99,
+    "oldPrice":849.99,
+    "reviewCount": 118,
+    "stock": 3,
+    "imgSource": "./assets/images/kiyafet/keten.jpeg",
+    "type": "Elbise"
+  },
+
+  {
+    "id": 3,
+    "name": "Etnik Desenli Tesettür Elbise",
+    "size": 38,
+    "starRate": 4,
+    "price":849.99,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/etnik-desenli.jpg",
+    "type": "Elbise"
+  },
+  {
+    "id": 4,
+    "name": "Balon Kol Tesettür Elbise",
+    "size": 42,
+    "starRate": 5,
+    "price":549.99,
+    "oldPrice":849.99,
+    "reviewCount": 194,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/balon-kol.jpg",
+    "type": "Elbise"
+  },
+
+  {
+    "id": 5,
+    "name": "Tesettür Takım",
+    "size": 38,
+    "starRate": 4,
+    "price":849.99,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/takim.jpg",
+    "type": "Takım"
+  },
+
+  {
+    "id": 6,
+    "name": "Uzun Tesettür Tunik",
+    "starRate": 5,
+    "price":849.99,
+    "size": 38,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/tunik1.jpg",
+    "type": "Üst Giyim"
+  },
+
+  {
+    "id": 7,
+    "name": "Tesettür Etek",
+    "starRate": 4,
+    "size": 42,
+    "price":849.99,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/etekk.jpg",
+    "type": "Alt Giyim"
+  },
+
+  {
+    "id": 8,
+    "name": "Trençkot",
+    "size": 38,
+    "starRate": 4,
+    "price":949.99,
+    "oldPrice":1249.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/diş-giyim.jpg",
+    "type": "Dış Giyim"
+  },
+
+  {
+    "id": 9,
+    "name": "Tesettür Etek",
+    "starRate": 3,
+    "size": 44,
+    "price":549.99,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/etek2.jpg",
+    "type": "Alt Giyim"
+  },
+
+  {
+    "id": 10,
+    "name": "Trençkot",
+    "size": 40,
+    "starRate": 5,
+    "price":749.99,
+    "oldPrice":1249.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/trenç.jpg",
+    "type": "Dış Giyim"
+  },
+
+  {
+    "id": 11,
+    "name": "Tesettür Takım",
+    "size": 42,
+    "starRate": 3,
+    "price":649.99,
+    "oldPrice":949.99,
+    "reviewCount": 192,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/takim2.jpg",
+    "type": "Takım"
+  },
+
+  {
+    "id": 12,
+    "name": "Belde Lastikli Tesettür Tunik",
+    "starRate": 3,
+    "size": 42,
+    "price":549.99,
+    "oldPrice":649.99,
+    "reviewCount": 102,
+    "stock": 5,
+    "imgSource": "./assets/images/kiyafet/tunik2.jpg",
+    "type": "Üst Giyim"
+  }
+  
+]

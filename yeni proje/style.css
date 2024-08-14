@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #1c2a39;
+  --gray: #5c6a79;
+  --purple: #4c3db2;
+  --transition: all 250ms ease-in-out;
+
+}
+
+.navbar{
+  height: 120px;
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+
+.title{
+font-weight: bold;
+}
+
+.menu, .menu_icons{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.menu li, .menu_icons li{
+  margin: 0 10px;
+
+
+}
+
+.menu .active{
+  color: var(--black);
+  font-weight: bold;
+
+}
+
+.menu_icons li{
+  color: var(--black);
+}
+
+.basket_icon{
+  position: relative;
+}
+
+.sepet_sayisi{
+  position: absolute;
+  right: -0.7rem;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--black);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sepet_sayisi:empty{
+  display: none;  /* sepetin içi boşsa bişey göstermicek sembolde */
+}
+
+.slider{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 550px;
+  
+}
+
+
+.slider img {
+  height: 550px;
+  
+}
+
+.store{
+  width: 80%;
+  margin-left: 10%;
+
+
+}
+
+.kiyafet_list{
+ margin-top: -125px; /* anasayfadaki kiyafetler ile filtre aynı hizada olması için  */
+ margin-left: 2%;
+
+}
+
+.kiyafet_card{
+  height: 400px;
+  
+  
+}
+
+.kiyafet_card img{
+  height: 300px;
+  
+}
+
+
+.Baslik{
+color: black;
+size: 20;
+font-weight: bold;}
+
+.Beden{
+color:var(--gray);
+size: 15;
+}
+
+
+.kiyafet_stars_rate .bi-star-fill{
+color: #f2c94c;
+font-size: 1.2rem;
+margin-right: 5px;
+}
+
+
+
+.btn_sepete_ekle{
+  cursor: pointer;
+  border: 2px solid var(--purple); /* Butonun dış çerçeve rengi*/
+  color: var(--purple); /* Butonun içindeki yazının rengi*/
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  transition: var(--transition);
+  padding: 2% 0;
+  margin-top: 20px; /* Butonun üst boşluğunu ayarlama*/
+
+  
+
+}
+
+
+.btn_sepete_ekle:hover{  /* Üzerine gelindiğinde buton rengi değişmesi için */
+  background-color: var(--purple);
+  color:white;
+}
+
+.filter_backgroung{
+  position: absolute;
+  width: 200px;
+  height: 600px;
+  background-color: rgb(228, 223, 223);
+  z-index: -1; /* diğer içeriğin alt kısmında kalması için */
+  
+
+}
+
+.filter{
+  
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-height: 650px;
+  
+}
+
+
+
+.filter li{
+  color: var(--black);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;  /* her biri tıklanabilr */
+}
+
+.filter li:hover{
+  color:#2e256d;
+  cursor: pointer;  /* her biri tıklanabilr */
+}
+
+.filter li.active{
+  color:#2e256d;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.filter li.active::before{
+  content: "";
+  display: inline-block;
+  width: 10;
+  height: 10;
+  border-radius: 50%;
+  background-color: var(--purple);
+  position: absolute;
+  left: -5px;
+
+
+}
+
+
+.yazi{
+  color:black;
+  font-size: 25px;
+  flex-direction: column;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 20px;
+  
+}
+
+
+.sepet_kolonu{
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  background-color: #5c6a7950; /* sepet açıldıgında siteyi gri gölgeli yapar*/
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: var(--transition);
+
+}
+
+
+.sepet_kolonu.active{
+  opacity: 1;
+  z-index: 999;
+  
+}
+
+
+
+.sepet_items{
+  position: relative;
+  width: 0;
+  background-color: white;
+  height: 100%;
+  float: right; 
+  transition: var(--transition);
+  
+}
+
+
+.sepet_kolonu.active .sepet_items{
+  width: 450px;  /* sepet diye açılan beyaz yan yerin genişliği  */
+
+
+}
+
+.sepet_items .bi-x{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+
+}
+
+.sepet_başlık{
+  color: var(--black);
+  text-align: center; /* ortada */
+  margin-top: 2rem;
+  font-weight: bold;  /* koyu yazı */
+}
+
+.sepet_list{
+  
+  list-style-type: none;
+  padding: 0 10px;
+  margin-top: 3rem;
+  max-height: 400px;
+  overflow-y: auto;/*y ekseninde yükseklği sabit tutup asağı yukarı indirilebilir.*/
+  
+
+} 
+
+
+
+.sepet_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
+
+
+.sepet_item_info{
+  width: 250px; /* sepete eklenen ürün satırırının genişliği */
+
+
+}
+
+.sepet_item_info .Baslik {
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.sepet_item_info .Beden {
+  font-size: 16px;
+  font-weight: bold;
+}
+.sepet_item_info .Fiyat {
+  font-size: 16px;
+}
+.sepet_item_info .sil{
+  cursor: pointer;
+  color: var(--gray);
+}
+
+
+
+.sepet_item .kiyafet_sayisi{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--black);
+  
+  
+}
+
+
+.kiyafet_sayisi .arttırma {
+  margin-left: 10px;
+}
+
+.kiyafet_sayisi .azaltma {
+  margin-right: 10px;
+}
+
+
+.kiyafet_sayisi .arttırma, .azaltma{
+  cursor: pointer;
+}
+
+.sepet_total{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 5%;
+  align-items: center;
+  width: inherit;
+  /*text-align: center;*/
+
+}
+
+.sepet_total button{
+  width: 250px;
+  
+}
+
+.toplam_fiyat:empty + .btn_sepete_ekle {
+  display: none;
+}
+
+
+/*
+basket__count -------->sepet_sayisi
+basket__modal--------> sepet_kolonu
+basket__items -------->sepet_items
+basket__list-------->sepet_list
+basket__item -------->sepet_item
+basket__item-info--------> sepet_item_info
+book__count -------->kiyafet_sayisi
+increase -------->arttırma
+decrease -------->azaltma
+basket__total -------->sepet_total
+total__price-------->toplam_fiyat
+btn__purple -------->btn_sepete_ekle
+
+
+basket__item-------->sepet_li -----> sepet_item
+
+
+*/
+
+
